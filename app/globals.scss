@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 5rem 4rem;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media(max-width:500px){
+        padding: 1rem;
+        background-color: black;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.main{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: aliceblue;
+    .text{
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  align-items: center;
+  font-size: 26px;
+  @media(max-width:500px){
+    font-size: 19px;
+    padding: 20px;
+   .time{
+    display: none;
+   }
+  }
+
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 1rem;
+       background-color: white;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       width: 100%;
+       min-height: 100vh;
+       padding: 30px;
+       @media(max-width:500px){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 10px;
+        padding: 10px;
+
+       }
+       .line-clamp {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+      }
+       .line-clamp2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+      }
+      .line-through{
+        text-decoration: line-through;
+      }
+       img{
+        object-fit: contain;
+       }
+       a{
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+       .products{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+        }
+    }
+}
+.singleProduct{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
